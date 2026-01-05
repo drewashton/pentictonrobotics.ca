@@ -5,6 +5,29 @@
     http-equiv="content-type"
     content="text/html;charset=utf-8"
   /><!-- /Added by HTTrack -->
+  <div class="newsletter-overlay" id="newsletterPopup">
+  <div class="newsletter-popup">
+    <div class="newsletter-close" onclick="closeNewsletter()">✕</div>
+
+    <h2>JOIN OUR NEWSLETTER</h2>
+    <p>
+      Subscribe to receive the latest news and exclusive offers every week.
+      No spam.
+    </p>
+
+    <form method="POST" action="https://a6d48789.sibforms.com/serve/MUIFAHA4a2bQgaDI2t2lG9Y5tvpSvvS9XLERjKR-IcBJZrR-8yuWNKN_Y5HBhJGhYze57PzdNb1XGW-1LW1iu_0MPq5UWiYzNmgi2feAkqF6VonwtH6M6qtExpa53u9c92lQJ5GMB0L81suX-11MO930HXfPapDQXgGfrBRdBWhzoLHh06aqe09KemRHKPuzTr7wFSFALUHIzViF9A==">
+
+      <input type="email" name="EMAIL" placeholder="Enter your email" required>
+
+      <button type="submit">SUBSCRIBE</button>
+
+      <div class="no-thanks" onclick="closeNewsletter()">NO THANKS</div>
+
+      <input type="hidden" name="locale" value="en">
+      <input type="hidden" name="html_type" value="simple">
+    </form>
+  </div>
+</div>
   <head>
     <script type="text/javascript"></script>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -108,7 +131,16 @@
       <script src="js/html5shiv.min.js"></script>
     <![endif]-->
   </head>
+<script>
+function closeNewsletter() {
+  document.getElementById('newsletterPopup').style.display = 'none';
+}
 
+// Auto-open after 2 seconds
+setTimeout(() => {
+  document.getElementById('newsletterPopup').style.display = 'flex';
+}, 2000);
+</script>
   <body class="site site-lang-en">
     <div id="wb_root" class="root wb-layout-vertical">
       <div class="wb_sbg"></div>
